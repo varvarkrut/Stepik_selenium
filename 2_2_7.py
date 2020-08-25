@@ -9,15 +9,19 @@ def calc(x):
 
 
 try:
+    cur_dir = (os.path.abspath(os.path.dirname(__file__)))
+    file_path = os.path.join(cur_dir, 'text.txt')
     link = "http://suninjuly.github.io/file_input.html"
     browser = webdriver.Chrome()
     browser.get(link)
-    fsname_el = browser.find_element_by_css_selector(".firstname")
+    fsname_el = browser.find_element_by_css_selector("[name='firstname']")
     fsname_el.send_keys("Ivan")
-    lsname_el = browser.find_element_by_css_selector(".lastname")
+    lsname_el = browser.find_element_by_css_selector("[name='lastname']")
     lsname_el.send_keys("Shkurko")
-    mail_el = browser.find_element_by_css_selector(".email")
+    mail_el = browser.find_element_by_css_selector("[name='email']")
     mail_el.send_keys("vanya.shcurko@gmail.com")
+    file_el = browser.find_element_by_css_selector("[type='file']")
+    file_el.send_keys(file_path)
     but3 = browser.find_element_by_css_selector("[type='submit']")
     but3.click()
     # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
