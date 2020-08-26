@@ -5,9 +5,9 @@ import sys
 
 class TestFactorize(unittest.TestCase):
     def test_test1(self):
-        self.assertEqual(test1(), "You have successfully registered!")
+        self.assertEqual(test1(), "Congratulations! You have successfully registered!")
     def test_test2(self):
-        self.assertEqual(test2(), "You have successfully registered!")
+        self.assertEqual(test2(), "Congratulations! You have successfully registered!")
         
 
 
