@@ -8,8 +8,7 @@ def test_different_localizations(browser):
     browser.implicitly_wait(15)
     browser.get(link)
     try:
-        submit_but = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
+        bucket_but = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
     except:
-        submit_but = False
-    submit_but.click()
-    assert submit_but != False, "Test failed, button was not found!"
+        bucket_but = False
+    assert bucket_but != False, "Test failed, button was not found!"
