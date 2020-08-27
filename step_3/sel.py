@@ -1,6 +1,6 @@
 from selenium import webdriver
 import time
-def test1():
+def reg1():
     try:
         link = "http://suninjuly.github.io/registration1.html"
         browser = webdriver.Chrome()
@@ -36,7 +36,7 @@ def test1():
         return welcome_text
 
 
-def test2():
+def reg2():
 
     link = "http://suninjuly.github.io/registration2.html"
     browser = webdriver.Chrome()
