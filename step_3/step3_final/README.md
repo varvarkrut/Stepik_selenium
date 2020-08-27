@@ -2,7 +2,7 @@
 
 <p>Launching autotests for different interface languages</p>
 
-<b>Description</h1>
+<h1>Description</h1>
 
 <p>In this task, need to write a program that will allow to run autotests for different languages of the online store users by passing the required language on the command line.</p>
 
