@@ -12,4 +12,4 @@
 
 <h1>How to run?</h1>
 <p>Run autotest with params
-pytest --language=es test_items.py</p>
+pytest --language={your language} test_items.py</p>
