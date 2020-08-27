@@ -1,4 +1,4 @@
-<b>Launching-autotests<b>
+<b>Launching-autotests</b>
 
 Launching autotests for different interface languages
 
