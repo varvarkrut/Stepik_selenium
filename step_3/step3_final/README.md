@@ -1,15 +1,15 @@
-<b>Launching-autotests</b>
+<h1>Launching-autotests</h1>
 
-Launching autotests for different interface languages
+<p>Launching autotests for different interface languages</p>
 
-<b>Description</b>
+<b>Description</h1>
 
-In this task, need to write a program that will allow to run autotests for different languages of the online store users by passing the required language on the command line.
+<p>In this task, need to write a program that will allow to run autotests for different languages of the online store users by passing the required language on the command line.</p>
 
-<b>Expected Result</b>
+<h1>Expected Result</h1>
 
-The tested online store should work equally well for users from any country.
+<p>The tested online store should work equally well for users from any country.</p>
 
-<b>How to run?</b>
-Run autotest with params
-pytest --language=es test_items.py
+<h1>How to run?</h1>
+<p>Run autotest with params
+pytest --language=es test_items.py</p>
