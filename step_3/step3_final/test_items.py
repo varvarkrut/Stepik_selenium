@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium import webdriver
 import pytest
 from selenium.webdriver.common.by import By
@@ -9,6 +10,6 @@ def test_different_localizations(browser):
     browser.get(link)
     try:
         bucket_but = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
-    except:
+    except NoSuchElementException:
         bucket_but = False
     assert bucket_but != False, "Test failed, button was not found!"
