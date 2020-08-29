@@ -4,7 +4,7 @@ import pytest
 from selenium.webdriver.common.by import By
 
 
-def test_different_localizations(browser):
+def test_bucket_button(browser):
     link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     browser.implicitly_wait(15)
     browser.get(link)
